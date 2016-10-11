@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "bithound": "^1.7.0",
     "browserify": "^13.0.0",
     "tap-xunit": "^1.4.0",
     "tape": "^4.4.0",
@@ -7,7 +8,8 @@
   },
   "scripts": {
     "test": "testem ci -l node ",
-    "test:circleci": "testem ci -l node | tap-xunit > $CIRCLE_TEST_REPORTS/test_result.xml"
+    "test:circleci": "testem ci -l node | tap-xunit > $CIRCLE_TEST_REPORTS/test_result.xml",
+    "codeclimate": "codeclimate analyze"
   },
   "repository": {
     "type": "git",
