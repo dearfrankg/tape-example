@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "tape": "^4.4.0",
+    "testem": "^1.12.0"
+  },
+  "scripts": {
+    "test": "testem ci -l node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/testem/testem.git"
+  },
+  "license": "MIT"
+}
