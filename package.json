@@ -6,7 +6,8 @@
     "testem": "^1.12.0"
   },
   "scripts": {
-    "test": "testem ci -l node | tap-xunit"
+    "test": "testem ci -l node ",
+    "test:circleci": "testem ci -l node | tap-xunit > $CIRCLE_TEST_REPORTS/test_result.xml"
   },
   "repository": {
     "type": "git",
